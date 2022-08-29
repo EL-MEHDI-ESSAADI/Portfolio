@@ -1,0 +1,40 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "portfolio",
+  "author": "El Mehdi Essaadi",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^2.0.7",
+    "gatsby": "^4.20.0",
+    "gatsby-plugin-image": "^2.21.0",
+    "gatsby-plugin-manifest": "^4.21.0",
+    "gatsby-plugin-react-helmet": "^5.21.0",
+    "gatsby-plugin-react-svg": "^3.1.0",
+    "gatsby-plugin-resolve-src": "^2.1.0",
+    "gatsby-plugin-sass": "^5.20.0",
+    "gatsby-plugin-sharp": "^4.21.0",
+    "gatsby-plugin-styled-components": "^5.20.0",
+    "gatsby-source-filesystem": "^4.21.1",
+    "gatsby-transformer-sharp": "^4.21.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.4.0",
+    "sass": "^1.54.4",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "gatsby-plugin-netlify": "^5.0.1"
+  }
+}
