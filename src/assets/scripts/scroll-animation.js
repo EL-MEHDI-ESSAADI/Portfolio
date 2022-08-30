@@ -8,8 +8,7 @@
 
       function handelScroll() {
          if (window.scrollY + window.innerHeight < el.offsetTop + 70) return;
-         el.style.animationDelay = el.dataset.fadeDelay || "0s";
-         el.classList.add("fade");
+         el.style.animation = `fadeInTop 0.6s ${el.dataset.fadeDelay || "0s"} ease-out both`;
          window.removeEventListener("scroll", handelScroll);
       }
    });

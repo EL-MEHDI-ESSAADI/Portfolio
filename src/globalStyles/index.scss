@@ -228,10 +228,6 @@ h6 {
 .fadeInScrollElement {
    opacity: 0;
 
-   &.fade {
-      animation: fadeInTop 0.6s ease-out both;
-   }
-
    @media (max-width: 767.9px) {
       animation-delay: 0s !important;
    }
