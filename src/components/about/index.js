@@ -77,7 +77,7 @@ function About() {
                <ParagraphsContainer className="fadeInScrollElement">
                   <Paragraph>
                      Hi! My name is Mehdi Essaadi, My interest in web development started back in 2021 (COVID-19
-                     time) while school was out, I decided to take the CS50 Harvard course, then I discovered my
+                     time) while school was out, I decided to take the CS50 Harvard course, where I discovered my
                      passion for web development.
                      <br /> Since then I have been building professional web applications and landing pages such as{" "}
                      {projectsLinksElements}and much more.
