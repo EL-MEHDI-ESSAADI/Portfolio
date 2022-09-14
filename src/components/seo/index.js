@@ -54,14 +54,14 @@ function Seo() {
          {/* scripts */}
          <script src={data.scrollAnimationScript.publicURL} defer />
             <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QTHZYEYQSS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+         <script async src="https://www.googletagmanager.com/gtag/js?id=G-QTHZYEYQSS"></script>
+         <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-  gtag('config', 'G-QTHZYEYQSS');
-</script>
+            gtag('config', 'G-QTHZYEYQSS');
+         </script>
       </Helmet>
    );
 }
