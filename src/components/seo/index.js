@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { Helmet } from "react-helmet";
 
@@ -26,13 +26,8 @@ function Seo() {
          }
       }
    `);
-   const [addGoogleAnalyticsTags, setAddGoogleAnalyticsTags] = useState(false);
    const secondaryLogoSrc = data.secondaryLogo.childImageSharp.gatsbyImageData.images.fallback.src;
    const { title, siteUrl, bigDescription, smallDescription, twitterUserName, siteType } = data.site.siteMetadata;
-
-   useEffect(() => {
-      setAddGoogleAnalyticsTags(true);
-   }, []);
 
    return (
       <Helmet>
@@ -55,18 +50,6 @@ function Seo() {
          <meta property="og:image: alt" content="personal image" />
          {/* scripts */}
          <script src={data.scrollAnimationScript.publicURL} defer />
-         {/* Google tag (gtag.js) */}
-         {addGoogleAnalyticsTags && (
-            <>
-               <script async src="https://www.googletagmanager.com/gtag/js?id=G-QTHZYEYQSS"></script>
-               <script>
-                  window.dataLayer = window.dataLayer || []; 
-                  function gtag(){window.dataLayer.push(arguments)}
-                  gtag('js', new Date()); 
-                  gtag('config', 'G-QTHZYEYQSS');
-               </script>
-            </>
-         )}
       </Helmet>
    );
 }
