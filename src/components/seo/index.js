@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { Helmet } from "react-helmet";
 
@@ -10,11 +10,9 @@ function Seo() {
                gatsbyImageData
             }
          }
-
          scrollAnimationScript: file(relativePath: { eq: "scripts/scroll-animation.js" }) {
             publicURL
          }
-
          site {
             siteMetadata {
                title
@@ -28,9 +26,18 @@ function Seo() {
          }
       }
    `);
-
    const secondaryLogoSrc = data.secondaryLogo.childImageSharp.gatsbyImageData.images.fallback.src;
    const { title, siteUrl, bigDescription, smallDescription, twitterUserName, siteType } = data.site.siteMetadata;
+
+   useEffect(() => {
+      // google analytics
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+         dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-QTHZYEYQSS");
+   }, []);
 
    return (
       <Helmet>
@@ -55,13 +62,6 @@ function Seo() {
          <script src={data.scrollAnimationScript.publicURL} defer />
          {/* Google tag (gtag.js) */}
          <script async src="https://www.googletagmanager.com/gtag/js?id=G-QTHZYEYQSS"></script>
-         <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments)}
-            gtag('js', new Date());
-
-            gtag('config', 'G-QTHZYEYQSS');
-         </script>
       </Helmet>
    );
 }
