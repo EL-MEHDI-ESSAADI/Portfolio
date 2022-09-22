@@ -67,7 +67,7 @@ export const Headline = styled.p`
    }
 `;
 
-export const ContactLink = styled(PrimaryLink)`
+export const ResumeLink = styled(PrimaryLink)`
    ${initialTransformAndOpacity}
    animation: ${showAnimation} ${TRANSITION_TIME} ${DELAY_TIMES.contactLink} ease-out both;
 `;

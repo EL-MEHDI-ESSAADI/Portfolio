@@ -1,10 +1,19 @@
 import React from "react";
 import { Container } from "components/styles";
-import { StyledHome, Header, IntroHeading, SpanWithLinearGradient, Headline, ContactLink} from "./styles";
+import { StyledHome, Header, IntroHeading, SpanWithLinearGradient, Headline, ResumeLink } from "./styles";
 import NavBar from "./Navbar";
-import { myEmailLink } from "data";
+import { graphql, useStaticQuery } from "gatsby";
 
 function Home() {
+   const {
+      file: { publicURL: resumeUrl },
+   } = useStaticQuery(graphql`
+      {
+         file(relativePath: { eq: "documents/resume.pdf" }) {
+            publicURL
+         }
+      }
+   `);
    return (
       <StyledHome id="home">
          <Header className="display-4 text-primary ff-yellowtail">
@@ -18,9 +27,9 @@ function Home() {
             <Headline className="fw-400 text-body mt-3">
                I contribute to the web by building fast, accessible, and pretty web applications
             </Headline>
-            <ContactLink className="mt-5" href={`mailto:${myEmailLink}`} rel="noreferrer" alt="contact">
-               Sey Hello
-            </ContactLink>
+            <ResumeLink className="mt-5" href={resumeUrl} download rel="noreferrer" alt="resume">
+               Resume
+            </ResumeLink>
          </Container>
          <NavBar />
       </StyledHome>
