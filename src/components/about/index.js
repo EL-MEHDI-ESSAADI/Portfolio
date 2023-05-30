@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Container } from "components/styles";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { myEmailLink, mentionedProjectsInAbout } from "data";
+import { mentionedProjectsInAbout } from "data";
 import { graphql, useStaticQuery } from "gatsby";
 import {
    Paragraph,
@@ -59,11 +59,6 @@ function About() {
       );
    });
 
-   const ContactLinkEl = (
-      <a href={`mailto:${myEmailLink}`} alt="email">
-         Contact me
-      </a>
-   );
    const Cs50HarverdLinkEl = <a target="_blank" rel="noreferrer" href="https://www.edx.org/cs50">CS50 Harvard course</a>;
    
    return (
@@ -83,10 +78,6 @@ function About() {
                      passion for web development.
                      <br /> Since then I have been building professional web applications and landing pages such as{" "}
                      {projectsLinksElements}and much more.
-                  </Paragraph>
-                  <Paragraph className="mt-4">
-                     I believe I’ve got the right skills and technologies to be the right Frontend Developer for
-                     your business, {ContactLinkEl} now that’s the best for your business.
                   </Paragraph>
                </ParagraphsContainer>
                <PersonalImgContainer className="fadeInScrollElement">

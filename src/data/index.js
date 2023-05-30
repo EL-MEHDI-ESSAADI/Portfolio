@@ -113,41 +113,49 @@ export const mySkills = [
    {
       name: "HTML5",
       imgName: "html",
-      id: 0
    },
    {
       name: "CSS3",
       imgName: "css",
-      id: 1
    },
    {
       name: "Sass",
       imgName: "sass",
-      id: 2
    },
    {
       name: "JavaScript",
       imgName: "javascript",
-      id: 3
+   },
+   {
+      name: "TypeScript",
+      imgName: "typescript",
    },
    {
       name: "React JS",
       imgName: "react",
-      id: 4
-   },
-   {
-      name: "Styled Components",
-      imgName: "styled-components",
-      id: 5
+   }
+   ,{
+      name: "Next JS",
+      imgName: "next",
+   }
+   ,{
+      name: "React Native",
+      imgName: "react",
+   }
+   ,{
+      name: "Tailwind",
+      imgName: "tailwind",
    },
    {
       name: "Bootstrap",
       imgName: "bootstrap",
-      id: 6
+   },
+   {
+      name: "Styled Components",
+      imgName: "styled-components",
    },
    {
       name: "Git",
       imgName: "git",
-      id: 7
    },
 ]

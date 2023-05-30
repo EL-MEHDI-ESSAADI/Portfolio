@@ -42,7 +42,7 @@ function Skills() {
 
    const skillsElements = mySkills.map((skillData, index) => {
       const imgSrc = imagesData.skills.nodes.find(({ name }) => name === skillData.imgName).publicURL;
-      return <Skill key={skillData.id} {...skillData} index={index} imgSrc={imgSrc} />;
+      return <Skill key={index} {...skillData} index={index} imgSrc={imgSrc} />;
    });
 
    return (
