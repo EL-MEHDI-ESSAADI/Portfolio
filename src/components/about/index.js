@@ -1,15 +1,8 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Container } from "components/styles";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { mentionedProjectsInAbout } from "data";
 import { graphql, useStaticQuery } from "gatsby";
-import {
-   Paragraph,
-   FaceImgContainer,
-   ContentContainer,
-   ParagraphsContainer,
-   PersonalImgContainer,
-} from "./styles";
+import { Paragraph, FaceImgContainer, ContentContainer, ParagraphsContainer, PersonalImgContainer } from "./styles";
 
 // components
 function About() {
@@ -28,39 +21,27 @@ function About() {
       }
    `);
 
-   const projectsLinksElements = mentionedProjectsInAbout.map((project) => {
-      const projectSectionId = project.projectSectionId;
+   const Cs50HarverdLinkEl = (
+      <a target="_blank" rel="noreferrer" href="https://cs50.harvard.edu/x/2021">
+         Harvard's CS50 course
+      </a>
+   );
+   const upworkLinkEl = (
+      <a target="_blank" rel="noreferrer" href="https://www.upwork.com/freelancers/~0122698996f13d5ff3">
+         Upwork
+      </a>
+   );
+   const inHouseLinkEl = (
+      <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/in-house6">
+         In-house
+      </a>
+   );
+   const ftFtLinkEl = (
+      <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/ftftapp">
+         FtFt
+      </a>
+   );
 
-      return (
-         <Fragment key={project.id}>
-            <a
-               href={`#${projectSectionId}`}
-               alt={project.descriptiveName}
-               onClick={(e) => {
-                  e.preventDefault();
-
-                  const projectEl = document.getElementById(projectSectionId);
-
-                  if (!projectEl) return;
-                  projectEl.classList.add("outlined");
-                  window.scrollTo(0, projectEl.offsetTop - 32);
-                  setTimeout(
-                     () =>
-                        document.getElementById(projectSectionId) &&
-                        document.getElementById(projectSectionId).classList.remove("outlined"),
-                     1500
-                  );
-               }}
-            >
-               {project.descriptiveName}
-            </a>
-            ,{" "}
-         </Fragment>
-      );
-   });
-
-   const Cs50HarverdLinkEl = <a target="_blank" rel="noreferrer" href="https://www.edx.org/cs50">CS50 Harvard course</a>;
-   
    return (
       <section id="about">
          <Container>
@@ -73,18 +54,22 @@ function About() {
             <ContentContainer className="mt-3">
                <ParagraphsContainer className="fadeInScrollElement">
                   <Paragraph>
-                     Hi! My name is Mehdi Essaadi, My interest in web development started back in 2021 (COVID-19
-                     time) while school was out, I decided to take the {Cs50HarverdLinkEl}, where I discovered my
-                     passion for web development.
-                     <br /> Since then I have been building professional web applications and landing pages such as{" "}
-                     {projectsLinksElements}and much more.
+                     My adventure in coding began in 2021 with {Cs50HarverdLinkEl}, a journey that turned into a passion for web
+                     development. Since then, I've been transforming ideas into reality through codes and pixels.
+                     <Paragraph className="mt-4">
+                        In my professional voyage, I've navigated the world of freelancing on {upworkLinkEl}, honed my skills in
+                        Next JS at {inHouseLinkEl}, and took flight at {ftFtLinkEl}, There, I played a significant role in the
+                        frontend development of ftft.ma, an experience that tremendously honed my skills and proficiency.
+                     </Paragraph>
+                     <Paragraph className="mt-4">
+                        When I'm not diving into codes, you'd find me on the football field, discovering new places, and spending
+                        cherished moments with my family. I continue to learn, create, and strive to leave my mark in the world of
+                        web development.
+                     </Paragraph>
                   </Paragraph>
                </ParagraphsContainer>
                <PersonalImgContainer className="fadeInScrollElement">
-                  <GatsbyImage
-                     image={dynamicImagesData.personalImg.childImageSharp.gatsbyImageData}
-                     alt="personal image"
-                  />
+                  <GatsbyImage image={dynamicImagesData.personalImg.childImageSharp.gatsbyImageData} alt="personal image" />
                </PersonalImgContainer>
             </ContentContainer>
          </Container>
