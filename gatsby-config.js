@@ -1,7 +1,7 @@
 module.exports = {
    siteMetadata: {
       title: "Mehdi Essaadi",
-      siteUrl: `https://mehdiessaadi.live`,
+      siteUrl: `https://mehdiessaadi.com`,
       siteType: "Portfolio",
       bigDescription:
          "Hello! My name is Mehdi Essaadi I’m a Frontend Developer, I contribute to the web by building fast, accessible, and pretty web applications",

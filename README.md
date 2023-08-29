@@ -3,16 +3,16 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://mehdiessaadi.live">
+  <a href="https://mehdiessaadi.com">
     <img src="readmeImages/secondaryLogo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">mehdiessaadi.live</h3>
+<h3 align="center">mehdiessaadi.com</h3>
 
   <p align="center">
     My personal portfolio
     <br />
-    <a href="https://mehdiessaadi.live" target="_blank"><strong>View »</strong></a>
+    <a href="https://mehdiessaadi.com" target="_blank"><strong>View »</strong></a>
     <br />
   </p>
 </div>
