@@ -98,13 +98,12 @@ export const projectsData = {
   ],
   secondary: [
     {
-      name: "Get Recipe",
-      description:
-        "A web app that lets you search for your desired recipe by the meal's name.",
-      projectSectionId: "get-recipe",
-      usedTechnologies: "React Js - Scss",
-      demoLink: "https://get-recipe-now.netlify.app",
-      githubRepoLink: "https://github.com/EL-MEHDI-ESSAADI/Recipe_App",
+      name: "Quick Chat",
+      description: "Real time chat app",
+      projectSectionId: "quick-chat",
+      usedTechnologies: "Next Js, PocketBase, Tailwind, Shadcn Ui",
+      demoLink: "https://quick-chat-io.vercel.app",
+      githubRepoLink: "https://github.com/EL-MEHDI-ESSAADI/quick-chat",
       id: 2,
     },
     {
