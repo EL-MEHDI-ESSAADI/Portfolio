@@ -34,10 +34,7 @@ export const mySocialMedias = [
       Icon: FaLinkedinIn,
     },
   ],
-  [
-    "github",
-    { link: "https://github.com/EL-MEHDI-ESSAADI", Icon: FaGithubAlt },
-  ],
+  ["github", { link: "https://github.com/EL-MEHDI-ESSAADI", Icon: FaGithubAlt }],
   ["twitter", { link: "https://twitter.com/Von__Mehdi", Icon: BsTwitter }],
 ];
 
@@ -84,7 +81,7 @@ export const projectsData = {
       descriptiveName: "Quran Mobile App",
       projectSectionId: "quran-mobile",
       description:
-        "Quran is a mobile app for reading the Qur'an with multiple translations. Listening feature with diverse reciters coming soon.",
+        "Quran App is a mobile app that lets you read and listen to the Quran in various languages and recitations.",
       usedTechnologies: "React Native, Expo, Tailwid",
       demoLink:
         "https://github.com/EL-MEHDI-ESSAADI/mobile-quran-app/assets/79756353/a1039945-b8f5-4cd9-8fe2-1a8ce4a2be5a",
@@ -130,12 +127,8 @@ export const projectsData = {
 };
 
 export const mentionedProjectsInAbout = [
-  ...projectsData.primary.filter(
-    ({ showAsLinkInAboutSection }) => showAsLinkInAboutSection
-  ),
-  ...projectsData.secondary.filter(
-    ({ showAsLinkInAboutSection }) => showAsLinkInAboutSection
-  ),
+  ...projectsData.primary.filter(({ showAsLinkInAboutSection }) => showAsLinkInAboutSection),
+  ...projectsData.secondary.filter(({ showAsLinkInAboutSection }) => showAsLinkInAboutSection),
 ];
 
 export const mySkills = [
