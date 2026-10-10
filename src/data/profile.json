@@ -1,0 +1,159 @@
+{
+  "name": "El Mehdi Essaadi",
+  "role": "Frontend Engineer",
+  "email": "mehdiessaadion@gmail.com",
+  "siteUrl": "https://mehdiessaadi.com",
+  "linkedin": "https://www.linkedin.com/in/el-mehdi-essaadi/",
+  "github": "https://github.com/EL-MEHDI-ESSAADI",
+  "summary": "Frontend engineer focused on React, Next.js and TypeScript, with experience leading frontend architecture and delivering consumer and agency travel products. Combines product ownership, attention to user experience and practical use of AI throughout engineering, with contributions to backend services in TypeScript and Go.",
+  "experiences": [
+    {
+      "company": "Overseas Network",
+      "role": "Front-End Software Engineer",
+      "start": "Oct 2024",
+      "end": "Present",
+      "context": "Frontend lead · Travel technology",
+      "summary": "Lead frontend development and architecture for consumer and agency travel platforms, from search and trip planning through checkout.",
+      "bullets": [
+        "Led frontend development for an official FIFA World Cup 2026 travel booking platform, connecting matches with hotels, experiences and ground transportation.",
+        "Built Fanatrips, the company’s first B2C event travel booking frontend, with hotel, experience and car rental journeys across search, authentication, trips and payments.",
+        "Built a multi tenant white label frontend for university travel sites, with domain based branding and event content from one codebase.",
+        "Lead frontend development of Overseas Express (OX), a B2B and B2B2C platform where agencies assemble trips, book directly or share trips with travelers for checkout.",
+        "Built reusable React components with Bit.dev and a Payload CMS corporate website. Implemented Next.js caching, accessibility and multilingual interfaces including Arabic and right to left layouts.",
+        "Use Claude Code, reusable agent skills and parallel AI workflows for implementation, debugging and browser based QA. Contribute to TypeScript and Go backend services."
+      ]
+    },
+    {
+      "company": "FtFt",
+      "role": "React / Next.js Developer",
+      "start": "Jan 2023",
+      "end": "Oct 2024",
+      "context": "Grocery commerce · Web and mobile",
+      "summary": "Built commerce experiences across web and mobile, and supported the team as the frontend work grew.",
+      "bullets": [
+        "Led frontend development of ftft.ma using Next.js, TypeScript, Tailwind CSS and GraphQL, with attention to performance and SEO.",
+        "Worked on React Native grocery picking and delivery applications, resolved mobile issues and mentored interns."
+      ]
+    },
+    {
+      "company": "Upwork",
+      "role": "Freelance Frontend Developer",
+      "start": "Sep 2022",
+      "end": "Jan 2023",
+      "context": "Freelance",
+      "summary": "Delivered React applications, browser extensions and storefront customizations for clients.",
+      "bullets": [
+        "Built React interfaces and browser extensions, and customized Wix, Ecwid and Squarespace storefronts."
+      ]
+    },
+    {
+      "company": "in-House",
+      "role": "React / Next.js Developer",
+      "start": "Oct 2022",
+      "end": "Dec 2022",
+      "context": "Part time",
+      "summary": "Turned UI designs into reusable Next.js interfaces.",
+      "bullets": [
+        "Translated UI designs into reusable interfaces using Next.js, Styled Components and Redux, and fixed product issues."
+      ]
+    }
+  ],
+  "capabilities": [
+    {
+      "title": "Frontend engineering",
+      "description": "Interfaces that stay understandable as products grow.",
+      "skills": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "HTML & CSS",
+        "Tailwind CSS",
+        "React Native",
+        "Styled Components",
+        "Sass"
+      ]
+    },
+    {
+      "title": "Product delivery",
+      "description": "Connected journeys, from the first search to checkout.",
+      "skills": [
+        "Frontend architecture",
+        "Reusable components",
+        "Bit.dev",
+        "REST APIs",
+        "GraphQL",
+        "Stripe",
+        "Payload CMS",
+        "Accessibility",
+        "SEO",
+        "Next.js caching",
+        "Localization"
+      ]
+    },
+    {
+      "title": "AI in engineering",
+      "description": "Practical tools for development, debugging and QA.",
+      "skills": [
+        "Claude Code",
+        "OpenAI Codex",
+        "ChatGPT",
+        "Reusable agent skills",
+        "AI agents",
+        "Browser based QA",
+        "Git worktrees"
+      ]
+    },
+    {
+      "title": "Across the stack",
+      "description": "Backend contributions and collaboration beyond the UI.",
+      "skills": [
+        "TypeScript services",
+        "Go contributions",
+        "Amazon Web Services (AWS)",
+        "Amazon Cognito",
+        "Node.js",
+        "Git & GitHub"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "name": "Ibn Khaldoun High School",
+      "detail": "High school diploma in Physical Sciences",
+      "dates": "2016 to 2018"
+    },
+    {
+      "name": "CS50",
+      "detail": "Computer science coursework via Harvard / edX",
+      "dates": "2021"
+    }
+  ],
+  "languages": "Arabic: native · English: professional working proficiency",
+  "resumeSkills": [
+    {
+      "title": "Frontend",
+      "skills": "React, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, React Native, Styled Components, Sass"
+    },
+    {
+      "title": "Product delivery",
+      "skills": "Frontend architecture, REST APIs, GraphQL, Stripe, Payload CMS, Bit.dev, accessibility, SEO, caching and localization"
+    },
+    {
+      "title": "AI & collaboration",
+      "skills": "Claude Code, OpenAI Codex, ChatGPT, reusable agent skills, Git worktrees, browser based QA, Git and GitHub"
+    },
+    {
+      "title": "Backend & cloud",
+      "skills": "AWS, Amazon Cognito, Node.js, TypeScript services and Go contributions"
+    }
+  ],
+  "resumeBullets": [
+    "Led frontend development of an official FIFA World Cup 2026 travel booking platform, from search to trip management and checkout.",
+    "Built Fanatrips’ B2C booking journeys for hotels, experiences and car rentals.",
+    "Built a multi tenant university white label frontend with domain based branding and event content.",
+    "Lead Overseas Express (OX), enabling agencies to assemble, book and share trips with travelers.",
+    "Built reusable React components with Bit.dev and a Payload CMS website, with caching, SEO and accessibility.",
+    "Apply Claude Code skills and parallel AI workflows to development, debugging and browser QA; contribute to TypeScript and Go services."
+  ]
+}

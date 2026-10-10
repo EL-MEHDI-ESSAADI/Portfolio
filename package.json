@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "portfolio",
+  "description": "El Mehdi Essaadi\u2019s frontend engineering portfolio",
   "author": "El Mehdi Essaadi",
   "keywords": [
     "gatsby"
@@ -12,31 +12,27 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "resume": "python3 scripts/generate-resume.py",
+    "format": "prettier --write src gatsby-config.js gatsby-ssr.js scripts/*.cjs",
+    "format:check": "prettier --check src gatsby-config.js gatsby-ssr.js scripts/*.cjs",
+    "verify": "node scripts/verify-build.cjs",
+    "social-cover": "node scripts/generate-social-cover.cjs"
   },
   "dependencies": {
-    "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^4.20.0",
     "gatsby-plugin-google-gtag": "^4.23.0",
     "gatsby-plugin-image": "^2.21.0",
     "gatsby-plugin-manifest": "^4.21.0",
-    "gatsby-plugin-react-helmet": "^5.21.0",
-    "gatsby-plugin-react-svg": "^3.1.0",
-    "gatsby-plugin-resolve-src": "^2.1.0",
-    "gatsby-plugin-sass": "^5.20.0",
     "gatsby-plugin-sharp": "^4.21.0",
-    "gatsby-plugin-styled-components": "^5.20.0",
     "gatsby-source-filesystem": "^4.21.1",
     "gatsby-transformer-sharp": "^4.21.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-helmet": "^6.1.0",
-    "react-icons": "^4.4.0",
-    "sass": "^1.54.4",
-    "sharp": "^0.32.1",
-    "styled-components": "^5.3.5"
+    "sharp": "^0.32.1"
   },
   "devDependencies": {
-    "gatsby-plugin-netlify": "^5.0.1"
+    "gatsby-plugin-netlify": "^5.0.1",
+    "prettier": "^3.9.10"
   }
 }

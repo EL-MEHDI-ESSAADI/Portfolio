@@ -1,44 +1,60 @@
-<div id="top"></div>
+# El Mehdi Essaadi · Frontend engineering
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://mehdiessaadi.com">
-    <img src="readmeImages/secondaryLogo.png" alt="Logo" width="80" height="80">
-  </a>
+A portfolio for React, Next.js and TypeScript product work, with a light interface, navy accents, a personal portrait and large product previews.
 
-<h3 align="center">mehdiessaadi.com</h3>
+## What is included
 
-  <p align="center">
-    My personal portfolio
-    <br />
-    <a href="https://mehdiessaadi.com" target="_blank"><strong>View »</strong></a>
-    <br />
-  </p>
-</div>
+* Professional projects at Overseas Network, with a dedicated FIFA World Cup 2026 case study and approved sample data screenshots.
+* Current experience, grouped skills and practical AI engineering workflows.
+* Earlier independent projects with GitHub source links.
+* A one page, selectable PDF résumé with clickable contact links, retaining the original gray header and two column layout.
+* Responsive layouts, semantic navigation, visible keyboard focus, reduced motion support and optimized project images.
+* Search and social metadata, a favicon, robots.txt and sitemap.xml.
 
-<br/>
+## Run locally
 
-![portfolio cover][cover]
+Use Node 22, the version used to validate this update.
 
-## Built With
+```sh
+npm ci
+npm run develop -- --host 127.0.0.1 --port 3110
+```
 
--  Gatsby
--  Styled Components
+For the production preview:
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+```sh
+npm run build
+npm run verify
+npm run serve -- --host 127.0.0.1 --port 3110
+```
 
+The site remains Gatsby. Build output is in `public/`; the existing Netlify plugin is retained. The approved production build was uploaded to the existing Netlify project on October 10, 2026. Netlify automatically builds the connected `main` branch. `netlify.toml` pins Node 22 and publishes the generated `public/` directory.
 
+## Update content
 
-<!-- CONTACT -->
+`src/data/profile.json` is the shared source for employment, capabilities and résumé content. Page specific project narratives are in `src/pages/index.js` and `src/pages/work/fifa-world-cup.js`.
 
-## Contact
+To regenerate the résumé:
 
-[@El Mehdi Essaadi](https://www.linkedin.com/in/el-mehdi-essaadi/) - mehdiessaadion@gmail.com
+```sh
+python3 -m pip install -r scripts/requirements.txt
+npm run resume
+```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+This writes `static/documents/el-mehdi-essaadi-resume.pdf` and updates `src/assets/documents/resume.pdf` for existing repository references. The script checks that the output fits on one page. Review the PDF visually after editing. Its Markdown companion is in `docs/resume.md`.
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+```sh
+npm run social-cover
+npm run format
+npm run format:check
+```
 
-[cover]: readmeImages/siteCover.png
+When changing the public domain, update `siteUrl` in the profile, `static/robots.txt`, `static/sitemap.xml` and the social cover generator. The existing Google Analytics identifier has been retained.
+
+## Public content boundaries
+
+The FIFA screenshots are application previews with sample data, including illustrative prices and availability. The application is no longer live. The case study describes frontend work performed at Overseas Network, not employment by FIFA. The images were selected and approved by the profile owner. No private company application source, credentials, release plans, migration counts or pricing policies are included.
+
+## Validation
+
+See `docs/verification.md` for the checks completed and any remaining review limitations.
