@@ -1,5 +1,9 @@
 # El Mehdi Essaadi · Frontend engineering
 
+[![El Mehdi Essaadi portfolio · Frontend Engineer](static/images/portfolio-hero.png)](https://mehdiessaadi.com)
+
+[Visit my portfolio](https://mehdiessaadi.com)
+
 A portfolio for React, Next.js and TypeScript product work, with a light interface, navy accents, a personal portrait and large product previews.
 
 ## What is included
